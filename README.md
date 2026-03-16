@@ -1,9 +1,8 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5fd1d16d-9d59-4ffd-869a-7c5822a06543/deploy-status)](https://app.netlify.com/projects/zheng-home/deploys)
-![Vercel Deploy](https://deploy-badge.vercel.app/vercel/zheng-home)
 
-# Zheng Ma's Homepage
 
-A modern, fast, and elegant academic homepage built with Next.js and Fumadocs. This website showcases research interests, publications, and documentation with a clean and professional design.
+# Xiong-Bin Yan's Homepage
+
+A modern academic homepage for Xiong-Bin Yan, featuring research interests, representative publications, talks, and documentation in inverse problems, scientific computing, and machine learning.
 
 ## 🛠️ Tech Stack
 
@@ -18,8 +17,8 @@ A modern, fast, and elegant academic homepage built with Next.js and Fumadocs. T
 
 ## 📧 Contact
 
-Zheng Ma (马征)
-Email: zhengma@sjtu.edu.cn
+Xiong-Bin Yan(Xiong-Bin Yan)
+Email: yanxb.lzu.edu.cn
 
 ---
 
