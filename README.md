@@ -17,7 +17,7 @@ A modern academic homepage for Xiong-Bin Yan, featuring research interests, repr
 
 ## 📧 Contact
 
-Xiong-Bin Yan(Xiong-Bin Yan)
+Xiong-Bin Yan(燕雄斌)
 Email: yanxb.lzu.edu.cn
 
 ---
