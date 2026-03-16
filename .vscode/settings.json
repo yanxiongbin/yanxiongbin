@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "[json][jsonc][javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "prettier.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.biome": "explicit"
+    }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

@@ -1,0 +1,213 @@
+[
+{
+    "type": "article-journal",
+    "title": "A Deep Learning Approach for Solving the Inverse Problem of the Wave Equation",
+    "author": [
+      {
+        "family": "Yan",
+        "given": "Xiong-Bin"
+      },
+      {
+        "family": "Wu",
+        "given": "Keke"
+      },
+      {
+        "family": "Xu",
+        "given": "Zhi-Qin John"
+      },
+      {
+        "family": "Ma",
+        "given": "Zheng"
+      }
+    ],
+    "container-title": "CSIAM Transactions on Applied Mathematics",
+    "DOI": "10.4208/csiam-am.SO-2024-0027",
+    "arXiv": "2311.04531",
+    "abstract": "Full-waveform inversion (FWI) is a powerful geophysical imaging technique that infers high-resolution subsurface physical parameters by solving a non-convex optimization problem. However, due to limitations in observation, e.g., limited shots or receivers, and random noise, conventional inversion methods are confronted with numerous challenges, such as the local-minimum problem. In recent years, a substantial body of work has demonstrated that the integration of deep neural networks and partial differential equations for solving full-waveform inversion problems has shown promising performance. In this work, drawing inspiration from the expressive capacity of neural networks, we provide an unsupervised learning approach aimed at accurately reconstructing subsurface physical velocity parameters. This method is founded on a re-parametrization technique for Bayesian inference, achieved through a deep neural network with random weights. Notably, our proposed approach does not hinge upon the requirement of the labeled training dataset, rendering it exceedingly versatile and adaptable to diverse subsurface models. Extensive experiments show that the proposed approach performs noticeably better than existing conventional inversion methods.",
+    "issued": {
+      "date-parts": [["2025"]]
+    },
+    "journalAbbreviation": "CSIAM Trans. Appl. Math.",
+    "id": "e25f1255-eca2-467d-bff5-77ceeeb5b51c",
+    "tags": ["FWI", "Deep Learning", "Unsupervised Learning"]
+  },
+  {
+    "type": "article-journal",
+    "title": "ODE-DPS: ODE-Based Diffusion Posterior Sampling for Linear Inverse Problems in Partial Differential Equation",
+    "author": [
+      {
+        "family": "Jiang",
+        "given": "Enze"
+      },
+      {
+        "family": "Peng",
+        "given": "Jishen"
+      },
+      {
+        "family": "Ma",
+        "given": "Zheng"
+      },
+      {
+        "family": "Yan",
+        "given": "Xiong-Bin"
+      }
+    ],
+    "container-title": "Journal of Scientific Computing",
+    "ISSN": "0885-7474",
+    "DOI": "10.1007/s10915-025-02790-8",
+    "arXiv": "2404.13496",
+    "abstract": "In recent years we have witnessed a growth in mathematics for deep learning, which has been used to solve inverse problems of partial differential equations (PDEs). However, most deep learning-based inversion methods either require paired data or necessitate retraining neural networks for modifications in the conditions of the inverse problem, significantly reducing the efficiency of inversion and limiting its applicability. To overcome this challenge, in this paper, leveraging the score-based generative diffusion model, we introduce a novel unsupervised inversion methodology tailored for solving inverse problems arising from PDEs. Our approach operates within the Bayesian inversion framework, treating the task of solving the posterior distribution as a conditional generation process achieved through solving a reverse-time stochastic differential equation. Furthermore, to enhance the accuracy of inversion results, we propose an ODE-based Diffusion Posterior Sampling inversion algorithm. The algorithm stems from the marginal probability density functions of two distinct forward generation processes that satisfy the same Fokker–Planck equation. Through a series of experiments involving various PDEs, we showcase the efficiency and robustness of our proposed method.",
+    "issued": {
+      "date-parts": [["2025"]]
+    },
+    "journalAbbreviation": "J. Sci. Comput.",
+    "page": "69",
+    "issue": "3",
+    "volume": "102",
+    "id": "e7b0ddfc-5bf4-4d91-9d64-82e2aaa81e43",
+    "tags": ["Inverse problems", "ODE-DPS", "Diffusion models"]
+  },
+  
+  {
+    "type": "article-journal",
+    "title": "Laplace-fPINNs: Laplace-Based Fractional Physics-Informed Neural Networks for Solving Forward and Inverse Problems of a Time Fractional Equation",
+    "author": [
+      {
+        "family": "Yan",
+        "given": "Xiong-Bin"
+      },
+      {
+        "family": "Xu",
+        "given": "Zhi-Qin John"
+      },
+      {
+        "family": "Ma",
+        "given": "Zheng"
+      }
+    ],
+    "container-title": "East Asian Journal on Applied Mathematics",
+    "ISSN": "2079-7362",
+    "DOI": "10.4208/eajam.2023-197.171223",
+    "issued": {
+      "date-parts": [["2024"]]
+    },
+    "journalAbbreviation": "East Asian J. Appl. Math.",
+    "page": "657-674",
+    "issue": "4",
+    "volume": "14",
+    "id": "1c621cf2-cc78-4b2b-bc13-1e8c4868a35a",
+    "tags": ["PINNs", "Laplace-fPINNs", "Fractional"]
+  },
+  {
+    "type": "article-journal",
+    "title": "Bayesian Inversion with Neural Operator (BINO) for modeling subdiffusion: Forward and inverse problems",
+    "author": [
+      {
+        "family": "Yan",
+        "given": "Xiong-Bin"
+      },
+      {
+        "family": "Xu",
+        "given": "Zhi-Qin John"
+      },
+      {
+        "family": "Ma",
+        "given": "Zheng"
+      }
+    ],
+    "container-title": "Journal of Computational and Applied Mathematics",
+    "ISSN": "0377-0427",
+    "DOI": "10.1016/j.cam.2024.116191",
+    "arXiv": "2211.11981",
+    "abstract": "Fractional diffusion equations have been an effective tool for modeling anomalous diffusion in complicated systems. However, traditional numerical methods require expensive computation cost and storage resources because of the memory effect brought by the convolution integral of time fractional derivative. We propose a Bayesian Inversion with Neural Operator (BINO) to overcome the difficulty in traditional methods as follows. We employ a deep operator network to learn the solution operators for the fractional diffusion equations, allowing us to swiftly and precisely solve a forward problem for given inputs (including fractional order, diffusion coefficient, source terms, etc.). In addition, we integrate the deep operator network with a Bayesian inversion method for modeling a problem by subdiffusion process and solving inverse subdiffusion problems, which reduces the time costs (without suffering from overwhelm storage resources) significantly. A large number of numerical experiments demonstrate that the operator learning method proposed in this work can efficiently solve the forward problems and Bayesian inverse problems of the subdiffusion equation.",
+    "issued": {
+      "date-parts": [["2025"]]
+    },
+    "journalAbbreviation": "J. Comput. Appl. Math.",
+    "page": "116191",
+    "volume": "454",
+    "id": "66b0f0a0-ce7a-4552-9caa-fb05c80bb53a",
+    "tags": [
+      "Inverse problems",
+      "Fractional Diffusion",
+      "Operator Leraning",
+      "Bayesian"
+    ]
+  },
+
+  {
+    "type": "article-journal",
+    "title": "Capturing the diffusive behavior of the multiscale linear transport equations by Asymptotic-Preserving Convolutional DeepONets",
+    "author": [
+      {
+        "family": "Wu",
+        "given": "Keke"
+      },
+      {
+        "family": "Yan",
+        "given": "Xiong-Bin"
+      },
+      {
+        "family": "Jin",
+        "given": "Shi"
+      },
+      {
+        "family": "Ma",
+        "given": "Zheng"
+      }
+    ],
+    "container-title": "Computer Methods in Applied Mechanics and Engineering",
+    "ISSN": "0045-7825",
+    "DOI": "10.1016/j.cma.2023.116531",
+    "abstract": "In this paper, we introduce two types of novel Asymptotic-Preserving Convolutional Deep Operator Networks (APCONs) designed to solve the multiscale time-dependent linear transport equations. We observe that the vanilla physics-informed DeepONets with modified MLP may exhibit instability in maintaining the desired limiting macroscopic behavior. Therefore, this necessitates the utilization of an asymptotic-preserving loss function. Drawing inspiration from the heat kernel in the diffusion equation, we propose a new architecture called Convolutional Deep Operator Networks, which employs multiple local convolution operations instead of a global heat kernel, along with pooling and activation operations in each filter layer. Our APCON methods possess a parameter count that is independent of the grid size and are capable of capturing the diffusive behavior of the linear transport problem. Finally, we validate the effectiveness of our methods through several numerical examples.",
+    "issued": {
+      "date-parts": [["2024"]]
+    },
+    "journalAbbreviation": "Comput. Methods Appl. Mech. Eng.",
+    "page": "116531",
+    "volume": "418",
+    "id": "7db6a4f5-a551-4709-b724-06e31a41930a",
+    "tags": [
+      "APNNs",
+      "APCON",
+      "Multiscale Kinetic Equations",
+      "Operator Leraning"
+    ]
+  },
+  {
+    "type": "article-journal",
+    "title": "Adaptive-fPINNs method for recovering simultaneously the fractional order and the space-dependent zeroth-order coefficient in subdiffusion",
+    "author": [
+      {
+        "family": "Pei",
+        "given": "Ming-Jia"
+      },
+      {
+        "family": "Yan",
+        "given": "Xiong-Bin"
+      },
+      {
+        "family": "Wei",
+        "given": "Ting"
+      }
+    ],
+    "container-title": "Physica D: Nonlinear Phenomena",
+    "ISSN": " ",
+    "DOI": "10.1016/j.physd.2025.134993",
+    "abstract": " ",
+    "issued": {
+      "date-parts": [["2025"]]
+    },
+    "journalAbbreviation": "Physica D: Nonlinear Phenomena",
+    "page": "134993",
+    "volume": "483",
+    "id": "yan-2024-laplace-fpinns",
+    "tags": [
+      "fPINNs",
+      "Inverse Problems",
+      "Fractional Diffusion"
+    ]
+  }
+]
+  
+  

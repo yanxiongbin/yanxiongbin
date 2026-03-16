@@ -1,0 +1,6 @@
+{
+  "title": "Full waveform inversion (FWI)",
+  "icon": "Atom",
+  "description": "AI for FWI",
+  "root": true
+}

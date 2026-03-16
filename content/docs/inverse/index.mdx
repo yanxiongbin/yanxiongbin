@@ -1,0 +1,120 @@
+---
+title: Inverse Problems
+description: AI for inverse problems
+---
+
+## Introduction
+
+Inverse problems arise in many areas of science and engineering 
+where one seeks to infer unknown causes, parameters, or structures 
+from indirect observations. In contrast to forward problems, 
+where the governing physical model is known and the corresponding 
+data can be predicted, inverse problems start from observed data 
+and attempt to recover the hidden quantities that generated them.
+
+Mathematically, inverse problems are often formulated as operator equations of the form
+
+$$
+\mathcal{F}(x)=y,
+$$
+
+where $x$ denotes the unknown quantity to be recovered, $y$ is the 
+observed data, and $\mathcal{F}$ is the forward operator determined by the underlying physical model.
+
+Inverse problems are typically challenging because they are often **nonlinear**, **ill-posed**, 
+and highly sensitive to noise, incomplete measurements, and model uncertainty. 
+As a result, mathematical analysis, regularization techniques, and efficient 
+numerical algorithms all play central roles in their study.
+
+## Applications
+
+Inverse problems have broad applications across many scientific and technological domains, including:
+
+- medical imaging, such as computed tomography, magnetic resonance imaging, and ultrasound imaging;
+- geophysical exploration, including seismic imaging and subsurface parameter reconstruction;
+- nondestructive testing and material characterization;
+- remote sensing and environmental monitoring;
+- optical imaging, radar, and wave-based sensing;
+- parameter identification in partial differential equations and dynamical systems.
+
+In all of these applications, the central goal is to recover hidden information from indirect and often noisy data.
+
+## Mathematical Perspective
+
+A typical inverse problem can be described by the equation
+
+$$
+\mathcal{F}(x)=y^{\mathrm{obs}},
+$$
+
+where $y^{\mathrm{obs}}$ denotes the measured data. 
+Since direct inversion is often unstable or even impossible, one usually reformulates the problem as an optimization problem:
+
+$$
+\min_x \; \frac{1}{2}\|\mathcal{F}(x)-y^{\mathrm{obs}}\|^2+\mathcal{R}(x),
+$$
+
+where $\mathcal{R}(x)$ is a regularization term that incorporates prior information and improves stability.
+
+The main mathematical difficulties include:
+
+- ill-posedness and instability,
+- nonuniqueness of solutions,
+- strong nonlinearity of the forward map,
+- high computational cost in large-scale settings.
+
+## AI for Inverse Problems
+
+Recent advances in artificial intelligence provide new approaches for 
+solving inverse problems more efficiently and robustly. 
+Instead of relying solely on traditional iterative reconstruction algorithms, 
+one can combine data-driven learning with physical modeling and numerical optimization.
+
+From a broad perspective, AI-based approaches to inverse problems can be divided into several main directions.
+
+### 1. Learning the inverse map directly
+
+One possible strategy is to train a neural network that maps observed data directly to the unknown quantity:
+
+$$
+x \approx \mathcal{G}_{\theta}(y),
+$$
+
+where $\mathcal{G}_{\theta}$ is a parameterized model, typically a deep neural network. 
+This approach can provide extremely fast inference once training is completed.
+
+### 2. Learning surrogate forward models
+
+Another strategy is to approximate the forward operator $\mathcal{F}$ by a neural network or neural operator, 
+thereby reducing the computational cost of repeated forward simulations in optimization-based inversion.
+
+### 3. Physics-informed learning
+
+A particularly promising approach is to incorporate the governing equations, physical constraints, 
+or conservation laws into the learning process. This leads to physics-informed neural networks and 
+related methods, which combine data fitting with physical consistency.
+
+### 4. Hybrid methods
+
+AI can also be integrated with classical inversion algorithms in hybrid frameworks. 
+For example, machine learning models may be used to provide good initial guesses, 
+learn regularization priors, accelerate optimization steps, or improve robustness against noise and incomplete data.
+
+## Research Interests
+
+My research interests in this area focus on the interplay between inverse problems, 
+partial differential equations, scientific computing, and machine learning. In particular, I am interested in:
+
+- mathematical modeling and analysis of inverse problems;
+- PDE-constrained optimization methods;
+- deep-learning-based reconstruction methods;
+- physics-informed and operator-learning approaches;
+- robust numerical methods for ill-posed and nonlinear inverse problems.
+
+## Outlook
+
+AI for inverse problems is an active and rapidly developing research direction. 
+By combining mathematical theory, numerical methods, and modern machine learning, 
+it is possible to develop reconstruction algorithms that are both computationally 
+efficient and physically meaningful. This interaction between mathematics and artificial 
+intelligence is opening new possibilities for solving challenging inverse problems arising in science and engineering.

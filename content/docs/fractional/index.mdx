@@ -1,0 +1,105 @@
+---
+title: Introduction
+description: Anomalous diffusion and inverse problems
+---
+
+## Introduction
+
+Anomalous diffusion arises in many complex systems where the spreading behavior 
+of particles, energy, or signals deviates from the classical Brownian motion 
+described by the standard diffusion equation. In contrast to normal diffusion, 
+anomalous diffusion often exhibits **memory effects**, **nonlocal interactions**, 
+and **heterogeneous transport behavior**, making it an important topic in applied 
+mathematics, physics, engineering, and biological sciences.
+
+Such phenomena appear in a wide range of applications, including transport in porous media, 
+underground water flow, viscoelastic materials, biological cell migration, financial dynamics, 
+and diffusion processes in complex disordered environments. In many of these settings, 
+the observed transport is either slower or faster than classical diffusion, leading to 
+the notions of **subdiffusion** and **superdiffusion**.
+
+From a mathematical perspective, anomalous diffusion is often modeled by **fractional partial differential equations**, 
+in which classical integer-order derivatives are replaced by fractional-order operators in time or space. 
+These models provide an effective framework for describing long-range dependence, hereditary effects, and spatial nonlocality.
+
+## Mathematical Models
+
+A typical time-fractional diffusion equation can be written as
+
+$$
+\partial_t^\alpha u(x,t) - \Delta u(x,t) + p(x)u(x,t) = f(x,t),
+\qquad 0<\alpha<1,
+$$
+
+where $\partial_t^\alpha$ denotes a fractional derivative in time, 
+$u(x,t)$ is the state variable, $p(x)$ is an unknown or prescribed coefficient, and $f(x,t)$ is a source term.
+
+More generally, anomalous diffusion models may involve
+
+- **time-fractional derivatives**, which describe memory effects;
+- **space-fractional operators**, which capture long-range jumps and nonlocal transport;
+- **fractional diffusion-wave equations**, which interpolate between diffusion and wave propagation;
+- **distributed-order models**, which describe multiple transport regimes.
+
+These models have attracted significant attention in both theoretical analysis and numerical computation.
+
+## Inverse Problems in Anomalous Diffusion
+
+Inverse problems in anomalous diffusion aim to recover unknown quantities in the governing model from indirect observations. 
+Depending on the application, one may seek to reconstruct
+
+- the fractional order $ \alpha$,
+- unknown coefficients or potentials,
+- source terms,
+- initial conditions,
+- boundary conditions,
+- diffusion parameters or kernels.
+
+Such inverse problems are important because the physically relevant quantities are often not directly measurable. 
+Instead, one only has access to partial observations of the system, such as boundary measurements, interior data, 
+or time-series observations.
+
+Mathematically, these problems are often **ill-posed**, meaning that solutions may fail to exist, 
+may not be unique, or may depend unstably on the data. This makes inverse problems in anomalous 
+diffusion both mathematically challenging and practically significant.
+
+## Main Challenges
+
+Inverse problems for anomalous diffusion involve several major difficulties.
+
+First, the underlying forward models are already nonlocal and history-dependent, 
+which makes both analysis and numerical simulation more complicated than in the classical diffusion case.
+
+Second, the presence of fractional derivatives introduces strong memory effects, 
+meaning that the solution depends on the entire past evolution of the system. 
+This increases computational cost and complicates parameter reconstruction.
+
+Third, inverse problems are typically highly sensitive to noise and incomplete data. 
+In practice, one usually has only limited observations, which further amplifies the instability of the reconstruction.
+
+Finally, when multiple unknowns are present, such as the simultaneous recovery of a 
+fractional order and a spatial coefficient, the inverse problem becomes even more nonlinear and difficult.
+
+## Research Interests
+
+My research interests in this area include
+
+- inverse problems for time-fractional and space-fractional diffusion equations,
+- simultaneous reconstruction of fractional orders and model coefficients,
+- mathematical analysis of uniqueness and stability,
+- numerical methods for fractional inverse problems,
+- deep-learning-based and physics-informed approaches for anomalous diffusion.
+
+In particular, I am interested in combining mathematical analysis, scientific computing, 
+and machine learning to develop effective methods for solving challenging inverse problems 
+arising from anomalous diffusion models.
+
+## Outlook
+
+Anomalous diffusion provides a rich mathematical framework for modeling 
+complex transport processes beyond the classical diffusion paradigm. 
+The associated inverse problems connect fractional calculus, 
+partial differential equations, inverse theory, and computational mathematics. 
+They also offer many opportunities for interaction with modern data-driven methods 
+and artificial intelligence, making this a promising research direction 
+at the intersection of mathematics and scientific machine learning.

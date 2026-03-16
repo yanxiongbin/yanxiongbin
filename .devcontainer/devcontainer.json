@@ -1,0 +1,23 @@
+{
+  "name": "Zheng's Homepage",
+  "dockerComposeFile": "compose.yaml",
+  "service": "homepage",
+  "workspaceFolder": "/homepage",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "oven.bun-vscode",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "unifiedjs.vscode-mdx",
+        "bradlc.vscode-tailwindcss",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "postCreateCommand": {
+    "fix-permissions": "sudo chown bun node_modules",
+    "install-dependencies": "bun install"
+  },
+  "remoteUser": "bun"
+}
